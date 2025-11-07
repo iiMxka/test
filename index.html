@@ -3,65 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbería Estilo</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Barbería El Estilo</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <!-- CSS interno -->
+    <link rel="stylesheet" href="style.css"> <!-- Aquí enlazas tu CSS separado -->
 </head>
 <body>
+    <!-- -------------------- Header / Navegación -------------------- -->
+    <header>
+        <nav>
+            <div class="logo">Barbería El Estilo</div> <!-- Cambia el nombre de la barbería aquí -->
+            <div class="nav-links">
+                <a href="#hero">Inicio</a>
+                <a href="#services">Servicios</a>
+                <a href="#gallery">Galería</a>
+                <a href="#contact">Contacto</a>
+            </div>
+        </nav>
+    </header>
 
-<header>
-    <h1>Barbería Estilo</h1>
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#galeria">Galería</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-</header>
+    <!-- -------------------- Hero -------------------- -->
+    <section class="hero" id="hero">
+        <h1>Barbería El Estilo</h1> <!-- Cambia el nombre de la barbería aquí -->
+        <p>Clásico y moderno, el estilo que te define</p> <!-- Cambia el eslogan aquí -->
+    </section>
 
-<section id="inicio" class="hero">
-    Bienvenido a Barbería Estilo
-</section>
-
-<section id="servicios">
-    <h2>Servicios</h2>
-    <div class="services">
-        <div class="service">
-            <h3>Corte Clásico</h3>
-            <p>Estilo elegante y tradicional para cualquier ocasión.</p>
+    <!-- -------------------- Servicios -------------------- -->
+    <section id="services">
+        <h2 style="text-align:center; margin-bottom:2rem;">Nuestros Servicios</h2>
+        <div class="services">
+            <div class="service-item">
+                <i class="fas fa-cut"></i>
+                <h3>Corte de Cabello</h3>
+                <p class="service-price">$20.000</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-beard"></i>
+                <h3>Arreglo de Barba</h3>
+                <p class="service-price">$15.000</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-scissors"></i>
+                <h3>Corte + Barba</h3>
+                <p class="service-price">$30.000</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-tint"></i>
+                <h3>Coloración</h3>
+                <p class="service-price">$25.000</p>
+            </div>
         </div>
-        <div class="service">
-            <h3>Barba y Bigote</h3>
-            <p>Recorte y diseño profesional de barba y bigote.</p>
+    </section>
+
+    <!-- -------------------- Galería -------------------- -->
+    <section id="gallery">
+        <h2 style="text-align:center; margin-bottom:2rem;">Galería</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1590080874322-4f64a242d567?auto=format&fit=crop&w=800&q=80" alt="Corte 1">
+            <img src="https://images.unsplash.com/photo-1590080874398-2f3fa720d8c0?auto=format&fit=crop&w=800&q=80" alt="Corte 2">
+            <img src="https://images.unsplash.com/photo-1590080874361-6b9cb527e3b3?auto=format&fit=crop&w=800&q=80" alt="Corte 3">
+            <img src="https://images.unsplash.com/photo-1590080874268-097f9b62f890?auto=format&fit=crop&w=800&q=80" alt="Corte 4">
         </div>
-        <div class="service">
-            <h3>Corte Moderno</h3>
-            <p>Diseños modernos y personalizados según tu estilo.</p>
+    </section>
+
+    <!-- -------------------- Contacto -------------------- -->
+    <section id="contact">
+        <h2 style="text-align:center; margin-bottom:2rem;">Contacto</h2>
+        <div class="contact">
+            <p><i class="fas fa-map-marker-alt"></i> Calle Falsa 123, Ciudad, País</p>
+            <p><i class="fas fa-clock"></i> Lunes - Sábado: 9:00 AM - 7:00 PM</p>
+            <p><i class="fas fa-phone-alt"></i> +57 300 123 4567</p>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="galeria">
-    <h2>Galería</h2>
-    <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1614284121113-0b6d064e08f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Corte 1">
-        <img src="https://images.unsplash.com/photo-1614284121178-1d6a3f8b7b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Corte 2">
-        <img src="https://images.unsplash.com/photo-1614284121171-0b4c6f8e7b5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Corte 3">
-    </div>
-</section>
+    <!-- -------------------- Botón WhatsApp -------------------- -->
+    <a class="whatsapp-btn" href="https://wa.me/573001234567?text=Hola,%20me%20gustaría%20agendar%20una%20cita." target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-<section id="contacto">
-    <h2>Contacto</h2>
-    <form>
-        <input type="text" placeholder="Nombre" required>
-        <input type="email" placeholder="Correo electrónico" required>
-        <textarea rows="5" placeholder="Mensaje" required></textarea>
-        <button type="submit">Enviar</button>
-    </form>
-</section>
-
-<footer>
-    &copy; 2025 Barbería Estilo. Todos los derechos reservados.
-</footer>
-
+    <!-- -------------------- JS -------------------- -->
+    <script>
+        // Scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
