@@ -1,0 +1,116 @@
+/* Reset y estilos básicos */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Secciones */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1587049352850-22e4d7d41f0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8YmFyYmVyaWF8fHx8fHwxNjk5MzU3MzY3&ixlib=rb-4.0.3&q=80&w=1080') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #000;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services, .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service, .gallery img {
+    flex: 1 1 250px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.service {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.service h3 {
+    margin-top: 0;
+}
+
+/* Contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #222;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+}
